@@ -18,13 +18,13 @@ public interface BlogDAO extends JpaRepository<Blog, Long> {
     @Query("SELECT b FROM Blog b WHERE b.posted = false")
     List<Blog> getUnPostedBlogs();
 
-    @Query("SELECT b FROM Blog b WHERE LOWER(b.title) LIKE LOWER(CONCAT('%', :title, '%'))")
+    @Query("SELECT b FROM Blog b WHERE b.posted = true AND LOWER(b.title) LIKE LOWER(CONCAT('%', :title, '%'))")
     List<Blog> findByTitle(String title);
 
-    @Query("SELECT b FROM Blog b WHERE LOWER(b.author) LIKE LOWER(CONCAT('%', :author, '%'))")
+    @Query("SELECT b FROM Blog b WHERE b.posted = true AND LOWER(b.author) LIKE LOWER(CONCAT('%', :author, '%'))")
     List<Blog> findByAuthor(String author);
 
-    @Query(value = "SELECT * from Blog ORDER BY title", nativeQuery = true)
+    @Query(value = "SELECT * from Blog b WHERE b.posted = true ORDER BY title", nativeQuery = true)
     List<Blog> findBlogSortedTitle();
 
     @Modifying

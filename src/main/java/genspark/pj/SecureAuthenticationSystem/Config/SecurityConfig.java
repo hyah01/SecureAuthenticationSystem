@@ -23,7 +23,7 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests(auth -> auth
                 // NOTE // Need to Change Once Controller is up
-                        .requestMatchers("/", "/user/save", "/product/all").permitAll()
+                        .requestMatchers("/", "/user/save", "/blogs").permitAll()
                         .anyRequest().authenticated())
                 .httpBasic(withDefaults())
                 .formLogin(withDefaults())

@@ -29,8 +29,8 @@ public class BlogServiceImpl implements BlogService{
     }
 
     @Override
-    public Blog getById(long id) {
-        Optional<Blog> b = this.blogDAO.findById(id);
+    public Blog getById(long blogid) {
+        Optional<Blog> b = this.blogDAO.findById(blogid);
         Blog blog = null;
         if (b.isPresent()) {
             blog = b.get();
