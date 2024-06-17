@@ -22,4 +22,10 @@ public class User {
     private String roles;
 //    @OneToMany(mappedBy = "author")
 //    private List<Blog> blogs;
+
+
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
 }
