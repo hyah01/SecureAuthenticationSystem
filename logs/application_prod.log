@@ -3411,3 +3411,459 @@ genspark.pj.SecureAuthenticationSystem.Controller.BlogController#saveUser(User) 
 2024-06-17 13:52:01 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
 2024-06-17 13:52:01 [http-nio-8080-exec-2] INFO  g.p.S.Aspect.LoggingAspect - Executing method: getPostedBlogs, Arguments: []
 2024-06-17 13:52:01 [http-nio-8080-exec-2] INFO  g.p.S.Aspect.LoggingAspect - Method executed: getPostedBlogs, Arguments: , Return: [Blog(id=3, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:17:17.965120Z, posted=true, author=user), Blog(id=8, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:32.944456Z, posted=true, author=user), Blog(id=9, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:37.437376Z, posted=true, author=user)]
+2024-06-17 13:55:50 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:55:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-17 13:55:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-17 13:55:54 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Starting SecureAuthenticationSystemApplication using Java 22.0.1 with PID 16376 (C:\projects\Genspark\SecureAuthenticationSystem\target\classes started by hyhuy in C:\projects\Genspark\SecureAuthenticationSystem)
+2024-06-17 13:55:54 [main] DEBUG g.p.S.SecureAuthenticationSystemApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-17 13:55:54 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - The following 1 profile is active: "prod"
+2024-06-17 13:55:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-17 13:55:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2024-06-17 13:55:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-17 13:55:55 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 13:55:55 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-17 13:55:55 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 13:55:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1122 ms
+2024-06-17 13:55:55 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-17 13:55:55 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-17 13:55:55 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-17 13:55:55 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-17 13:55:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-17 13:55:55 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3fe8ad3f
+2024-06-17 13:55:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-17 13:55:55 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-17 13:55:56 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: genspark.pj.SecureAuthenticationSystem.Entity.User (class must be instantiated by Interceptor)
+2024-06-17 13:55:56 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-17 13:55:56 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:55:56 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-17 13:55:57 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-17 13:55:57 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-06-17 13:55:57 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-06-17 13:55:57 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@293ccbdd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12f85dc8, org.springframework.security.web.context.SecurityContextHolderFilter@7d3a9061, org.springframework.security.web.header.HeaderWriterFilter@27aa700, org.springframework.web.filter.CorsFilter@474a63d9, org.springframework.security.web.authentication.logout.LogoutFilter@13d7d1a8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@e7b7395, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@9c88323, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1b8d0c21, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@77198cce, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8d40f07, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@307ca947, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54a04eae, org.springframework.security.web.access.ExceptionTranslationFilter@60a3a0fa, org.springframework.security.web.access.intercept.AuthorizationFilter@279b83ea]
+2024-06-17 13:55:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-17 13:55:57 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Started SecureAuthenticationSystemApplication in 3.971 seconds (process running for 4.264)
+2024-06-17 13:55:59 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 13:55:59 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 13:55:59 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-17 14:01:16 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 14:01:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-17 14:01:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-17 14:01:20 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Starting SecureAuthenticationSystemApplication using Java 22.0.1 with PID 4752 (C:\projects\Genspark\SecureAuthenticationSystem\target\classes started by hyhuy in C:\projects\Genspark\SecureAuthenticationSystem)
+2024-06-17 14:01:20 [main] DEBUG g.p.S.SecureAuthenticationSystemApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-17 14:01:20 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - The following 1 profile is active: "prod"
+2024-06-17 14:01:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-17 14:01:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+2024-06-17 14:01:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-17 14:01:21 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 14:01:21 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-17 14:01:21 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 14:01:21 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1179 ms
+2024-06-17 14:01:21 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-17 14:01:21 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-17 14:01:21 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-17 14:01:21 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-17 14:01:21 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-17 14:01:22 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d617b07
+2024-06-17 14:01:22 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-17 14:01:22 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-17 14:01:22 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: genspark.pj.SecureAuthenticationSystem.Entity.User (class must be instantiated by Interceptor)
+2024-06-17 14:01:22 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-17 14:01:22 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 14:01:22 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-17 14:01:23 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-17 14:01:23 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-06-17 14:01:23 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-06-17 14:01:23 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1313dea8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@74bca236, org.springframework.security.web.context.SecurityContextHolderFilter@60035f1e, org.springframework.security.web.header.HeaderWriterFilter@292237cd, org.springframework.web.filter.CorsFilter@526fbb80, org.springframework.security.web.authentication.logout.LogoutFilter@4664fef, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1da77a43, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@d7645b2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@33dcbdc2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@10fef6da, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@732ffb6a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2459715c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e37c38f, org.springframework.security.web.access.ExceptionTranslationFilter@6dd0e2f4, org.springframework.security.web.access.intercept.AuthorizationFilter@74a37c91]
+2024-06-17 14:01:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-17 14:01:23 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Started SecureAuthenticationSystemApplication in 4.038 seconds (process running for 4.323)
+2024-06-17 14:01:25 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 14:01:25 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 14:01:25 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-17 14:01:31 [http-nio-8080-exec-4] INFO  g.p.S.Aspect.LoggingAspect - Executing method: getPostedBlogs, Arguments: []
+2024-06-17 14:01:31 [http-nio-8080-exec-4] INFO  g.p.S.Aspect.LoggingAspect - Method executed: getPostedBlogs, Arguments: , Return: [Blog(id=3, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:17:17.965120Z, posted=true, author=user), Blog(id=8, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:32.944456Z, posted=true, author=user), Blog(id=9, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:37.437376Z, posted=true, author=user)]
+2024-06-17 14:03:02 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 14:03:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-17 14:03:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-17 14:03:05 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Starting SecureAuthenticationSystemApplication using Java 22.0.1 with PID 28988 (C:\projects\Genspark\SecureAuthenticationSystem\target\classes started by hyhuy in C:\projects\Genspark\SecureAuthenticationSystem)
+2024-06-17 14:03:05 [main] DEBUG g.p.S.SecureAuthenticationSystemApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-17 14:03:05 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - The following 1 profile is active: "prod"
+2024-06-17 14:03:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-17 14:03:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+2024-06-17 14:03:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-17 14:03:06 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 14:03:06 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-17 14:03:06 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 14:03:06 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1153 ms
+2024-06-17 14:03:06 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-17 14:03:06 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-17 14:03:06 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-17 14:03:06 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-17 14:03:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-17 14:03:07 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18811c42
+2024-06-17 14:03:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-17 14:03:07 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-17 14:03:07 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: genspark.pj.SecureAuthenticationSystem.Entity.User (class must be instantiated by Interceptor)
+2024-06-17 14:03:07 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-17 14:03:07 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 14:03:07 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-17 14:03:08 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-17 14:03:08 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-06-17 14:03:08 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-06-17 14:03:08 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39595a8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@26169be3, org.springframework.security.web.context.SecurityContextHolderFilter@9c88323, org.springframework.security.web.header.HeaderWriterFilter@49d5b651, org.springframework.web.filter.CorsFilter@f573dcb, org.springframework.security.web.authentication.logout.LogoutFilter@3c6c87fa, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@63b95a30, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3d0c88f4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6f636de3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1026a011, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1dc47df3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@68f67bbd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40f49d72, org.springframework.security.web.access.ExceptionTranslationFilter@307ca947, org.springframework.security.web.access.intercept.AuthorizationFilter@e7b7395]
+2024-06-17 14:03:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-17 14:03:08 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Started SecureAuthenticationSystemApplication in 3.986 seconds (process running for 4.276)
+2024-06-17 14:03:10 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 14:03:10 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 14:03:10 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-06-17 14:03:51 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 14:03:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-17 14:03:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-17 14:03:53 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Starting SecureAuthenticationSystemApplication using Java 22.0.1 with PID 20328 (C:\projects\Genspark\SecureAuthenticationSystem\target\classes started by hyhuy in C:\projects\Genspark\SecureAuthenticationSystem)
+2024-06-17 14:03:53 [main] DEBUG g.p.S.SecureAuthenticationSystemApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-17 14:03:53 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - The following 1 profile is active: "prod"
+2024-06-17 14:03:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-17 14:03:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2024-06-17 14:03:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-17 14:03:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 14:03:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-17 14:03:54 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 14:03:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1094 ms
+2024-06-17 14:03:54 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-17 14:03:54 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-17 14:03:54 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-17 14:03:55 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-17 14:03:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-17 14:03:55 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26d73519
+2024-06-17 14:03:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-17 14:03:55 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-17 14:03:55 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: genspark.pj.SecureAuthenticationSystem.Entity.User (class must be instantiated by Interceptor)
+2024-06-17 14:03:55 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-17 14:03:55 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 14:03:56 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-17 14:03:56 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-17 14:03:56 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-06-17 14:03:56 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-06-17 14:03:56 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@179dc2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1802badc, org.springframework.security.web.context.SecurityContextHolderFilter@453ca7f, org.springframework.security.web.header.HeaderWriterFilter@3d0c88f4, org.springframework.web.filter.CorsFilter@3a089620, org.springframework.security.web.authentication.logout.LogoutFilter@e7b7395, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3cd3cf6b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@732ffb6a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2cbb9702, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@58581ab6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6dd0e2f4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@292237cd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10fef6da, org.springframework.security.web.access.ExceptionTranslationFilter@11736ebc, org.springframework.security.web.access.intercept.AuthorizationFilter@26169be3]
+2024-06-17 14:03:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-17 14:03:57 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Started SecureAuthenticationSystemApplication in 3.827 seconds (process running for 4.106)
+2024-06-17 14:04:01 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 14:04:01 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 14:04:01 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-17 14:04:01 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /blogs/all
+2024-06-17 14:04:01 [http-nio-8080-exec-1] DEBUG o.s.s.a.DefaultAuthenticationEventPublisher - No event was found for the exception org.springframework.security.authentication.InternalAuthenticationServiceException
+2024-06-17 14:04:01 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Failed to process authentication request
+org.springframework.security.authentication.InternalAuthenticationServiceException: No default constructor for entity 'genspark.pj.SecureAuthenticationSystem.Entity.User'
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:122)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:133)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:201)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:187)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:189)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:175)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: org.springframework.orm.jpa.JpaSystemException: No default constructor for entity 'genspark.pj.SecureAuthenticationSystem.Entity.User'
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:341)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy129.findByUsername(Unknown Source)
+	at genspark.pj.SecureAuthenticationSystem.Config.UserInfoUserDetailsService.loadUserByUsername(UserInfoUserDetailsService.java:18)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:107)
+	... 73 common frames omitted
+Caused by: org.hibernate.InstantiationException: No default constructor for entity 'genspark.pj.SecureAuthenticationSystem.Entity.User'
+	at org.hibernate.metamodel.internal.EntityInstantiatorPojoStandard.instantiate(EntityInstantiatorPojoStandard.java:93)
+	at org.hibernate.persister.entity.AbstractEntityPersister.instantiate(AbstractEntityPersister.java:4569)
+	at org.hibernate.internal.SessionImpl.instantiate(SessionImpl.java:1485)
+	at org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.instantiateEntity(AbstractEntityInitializer.java:693)
+	at org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.resolveEntityInstance(AbstractEntityInitializer.java:686)
+	at org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.resolveInstance(AbstractEntityInitializer.java:637)
+	at org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.resolveEntityInstance(AbstractEntityInitializer.java:559)
+	at org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.resolveInstance(AbstractEntityInitializer.java:458)
+	at org.hibernate.sql.results.internal.InitializersList.resolveInstances(InitializersList.java:97)
+	at org.hibernate.sql.results.internal.StandardRowReader.coordinateInitializers(StandardRowReader.java:112)
+	at org.hibernate.sql.results.internal.StandardRowReader.readRow(StandardRowReader.java:87)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:205)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:33)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:211)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:83)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:76)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:65)
+	at org.hibernate.query.sql.internal.NativeSelectQueryPlanImpl.performList(NativeSelectQueryPlanImpl.java:138)
+	at org.hibernate.query.sql.internal.NativeQueryImpl.doList(NativeQueryImpl.java:628)
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:423)
+	at org.hibernate.query.spi.AbstractSelectionQuery.getSingleResult(AbstractSelectionQuery.java:555)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:418)
+	at jdk.proxy2/jdk.proxy2.$Proxy138.getSingleResult(Unknown Source)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:223)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:92)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:152)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:140)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 82 common frames omitted
+2024-06-17 14:04:01 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2024-06-17 14:04:01 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@51db4bdc
+2024-06-17 14:04:01 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2024-06-17 14:04:01 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-06-17 14:04:01 [http-nio-8080-exec-1] DEBUG o.s.s.w.s.HttpSessionRequestCache - Saved request http://localhost:8080/error?continue to session
+2024-06-17 14:04:01 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@398f6622, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@398f6622, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@398f6622, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2024-06-17 14:04:01 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@36573ec5
+2024-06-17 14:04:01 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2024-06-17 14:04:01 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@51db4bdc
+2024-06-17 14:05:06 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 14:05:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-17 14:05:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-17 14:05:09 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Starting SecureAuthenticationSystemApplication using Java 22.0.1 with PID 26140 (C:\projects\Genspark\SecureAuthenticationSystem\target\classes started by hyhuy in C:\projects\Genspark\SecureAuthenticationSystem)
+2024-06-17 14:05:09 [main] DEBUG g.p.S.SecureAuthenticationSystemApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-17 14:05:09 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - The following 1 profile is active: "prod"
+2024-06-17 14:05:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-17 14:05:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2024-06-17 14:05:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-17 14:05:10 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 14:05:10 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-17 14:05:10 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 14:05:10 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1168 ms
+2024-06-17 14:05:10 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-17 14:05:10 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-17 14:05:10 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-17 14:05:10 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-17 14:05:10 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-17 14:05:11 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1acc873b
+2024-06-17 14:05:11 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-17 14:05:11 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-17 14:05:11 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-17 14:05:11 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 14:05:11 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-17 14:05:12 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-17 14:05:12 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-06-17 14:05:12 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-06-17 14:05:12 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2cbb9702, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10fef6da, org.springframework.security.web.context.SecurityContextHolderFilter@333813e7, org.springframework.security.web.header.HeaderWriterFilter@453ca7f, org.springframework.web.filter.CorsFilter@1da77a43, org.springframework.security.web.authentication.logout.LogoutFilter@12f85dc8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1802badc, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@401e36ab, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@63604641, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@179dc2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@797a5b31, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60035f1e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1313dea8, org.springframework.security.web.access.ExceptionTranslationFilter@5aad4194, org.springframework.security.web.access.intercept.AuthorizationFilter@40f49d72]
+2024-06-17 14:05:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-17 14:05:12 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Started SecureAuthenticationSystemApplication in 4.003 seconds (process running for 4.273)
+2024-06-17 14:05:14 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 14:05:14 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 14:05:14 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-17 14:05:14 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /blogs/all
+2024-06-17 14:05:14 [http-nio-8080-exec-1] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2024-06-17 14:05:14 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=genspark.pj.SecureAuthenticationSystem.Config.UserInfoDetails@34f18a03, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ADMIN]]
+2024-06-17 14:05:14 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /blogs/all
+2024-06-17 14:05:14 [http-nio-8080-exec-1] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity genspark.pj.SecureAuthenticationSystem.Controller.BlogController.getAllBlogs(); target is of class [genspark.pj.SecureAuthenticationSystem.Controller.BlogController]
+2024-06-17 14:05:14 [http-nio-8080-exec-1] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity genspark.pj.SecureAuthenticationSystem.Controller.BlogController.getAllBlogs(); target is of class [genspark.pj.SecureAuthenticationSystem.Controller.BlogController]
+2024-06-17 14:05:14 [http-nio-8080-exec-1] INFO  g.p.S.Aspect.LoggingAspect - Executing method: getAllBlogs, Arguments: []
+2024-06-17 14:05:14 [http-nio-8080-exec-1] INFO  g.p.S.Aspect.LoggingAspect - Method executed: getAllBlogs, Arguments: , Return: [Blog(id=3, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:17:17.965120Z, posted=true, author=user), Blog(id=4, title=Blog4, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T17:35:16.663946Z, posted=false, author=User1), Blog(id=5, title=Blog4, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:04:40.904832Z, posted=false, author=null), Blog(id=7, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:17:17.965120Z, posted=false, author=user), Blog(id=8, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:32.944456Z, posted=true, author=user), Blog(id=9, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:37.437376Z, posted=true, author=user), Blog(id=10, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:36:47.404620Z, posted=false, author=user), Blog(id=11, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:55:56.427823Z, posted=false, author=user)]
+2024-06-17 14:05:27 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /blogs/all
+2024-06-17 14:05:27 [http-nio-8080-exec-3] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2024-06-17 14:05:27 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=genspark.pj.SecureAuthenticationSystem.Config.UserInfoDetails@21a4bd07, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[USER]]
+2024-06-17 14:05:27 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /blogs/all
+2024-06-17 14:05:27 [http-nio-8080-exec-3] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity genspark.pj.SecureAuthenticationSystem.Controller.BlogController.getAllBlogs(); target is of class [genspark.pj.SecureAuthenticationSystem.Controller.BlogController]
+2024-06-17 14:05:27 [http-nio-8080-exec-3] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Failed to authorize ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity genspark.pj.SecureAuthenticationSystem.Controller.BlogController.getAllBlogs(); target is of class [genspark.pj.SecureAuthenticationSystem.Controller.BlogController] with authorization manager org.springframework.security.config.annotation.method.configuration.DeferringObservationAuthorizationManager@7051d311 and decision ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasAuthority('ADMIN')]
+2024-06-17 14:05:27 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AccessDeniedHandlerImpl - Responding with 403 status code
+2024-06-17 14:05:27 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2024-06-17 14:05:27 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+2024-06-17 14:05:36 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /blogs/all
+2024-06-17 14:05:36 [http-nio-8080-exec-4] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2024-06-17 14:05:36 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=genspark.pj.SecureAuthenticationSystem.Config.UserInfoDetails@555d92ad, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ADMIN]]
+2024-06-17 14:05:36 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /blogs/all
+2024-06-17 14:05:36 [http-nio-8080-exec-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity genspark.pj.SecureAuthenticationSystem.Controller.BlogController.getAllBlogs(); target is of class [genspark.pj.SecureAuthenticationSystem.Controller.BlogController]
+2024-06-17 14:05:36 [http-nio-8080-exec-4] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity genspark.pj.SecureAuthenticationSystem.Controller.BlogController.getAllBlogs(); target is of class [genspark.pj.SecureAuthenticationSystem.Controller.BlogController]
+2024-06-17 14:05:36 [http-nio-8080-exec-4] INFO  g.p.S.Aspect.LoggingAspect - Executing method: getAllBlogs, Arguments: []
+2024-06-17 14:05:36 [http-nio-8080-exec-4] INFO  g.p.S.Aspect.LoggingAspect - Method executed: getAllBlogs, Arguments: , Return: [Blog(id=3, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:17:17.965120Z, posted=true, author=user), Blog(id=4, title=Blog4, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T17:35:16.663946Z, posted=false, author=User1), Blog(id=5, title=Blog4, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:04:40.904832Z, posted=false, author=null), Blog(id=7, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:17:17.965120Z, posted=false, author=user), Blog(id=8, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:32.944456Z, posted=true, author=user), Blog(id=9, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:37.437376Z, posted=true, author=user), Blog(id=10, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:36:47.404620Z, posted=false, author=user), Blog(id=11, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:55:56.427823Z, posted=false, author=user)]
+2024-06-17 14:05:39 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /blogs
+2024-06-17 14:05:39 [http-nio-8080-exec-5] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2024-06-17 14:05:39 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=genspark.pj.SecureAuthenticationSystem.Config.UserInfoDetails@172e9fb2, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ADMIN]]
+2024-06-17 14:05:39 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /blogs
+2024-06-17 14:05:39 [http-nio-8080-exec-5] INFO  g.p.S.Aspect.LoggingAspect - Executing method: getPostedBlogs, Arguments: []
+2024-06-17 14:05:39 [http-nio-8080-exec-5] INFO  g.p.S.Aspect.LoggingAspect - Method executed: getPostedBlogs, Arguments: , Return: [Blog(id=3, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:17:17.965120Z, posted=true, author=user), Blog(id=8, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:32.944456Z, posted=true, author=user), Blog(id=9, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:37.437376Z, posted=true, author=user)]
+2024-06-17 14:05:45 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /blogs
+2024-06-17 14:05:45 [http-nio-8080-exec-6] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2024-06-17 14:05:45 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=genspark.pj.SecureAuthenticationSystem.Config.UserInfoDetails@4e67b19f, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[USER]]
+2024-06-17 14:05:45 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /blogs
+2024-06-17 14:05:45 [http-nio-8080-exec-6] INFO  g.p.S.Aspect.LoggingAspect - Executing method: getPostedBlogs, Arguments: []
+2024-06-17 14:05:45 [http-nio-8080-exec-6] INFO  g.p.S.Aspect.LoggingAspect - Method executed: getPostedBlogs, Arguments: , Return: [Blog(id=3, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:17:17.965120Z, posted=true, author=user), Blog(id=8, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:32.944456Z, posted=true, author=user), Blog(id=9, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:37.437376Z, posted=true, author=user)]
+2024-06-17 14:05:56 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /blogs
+2024-06-17 14:05:56 [http-nio-8080-exec-7] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2024-06-17 14:05:56 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=genspark.pj.SecureAuthenticationSystem.Config.UserInfoDetails@5de6e378, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ADMIN]]
+2024-06-17 14:05:56 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /blogs
+2024-06-17 14:05:56 [http-nio-8080-exec-7] INFO  g.p.S.Aspect.LoggingAspect - Executing method: getPostedBlogs, Arguments: []
+2024-06-17 14:05:56 [http-nio-8080-exec-7] INFO  g.p.S.Aspect.LoggingAspect - Method executed: getPostedBlogs, Arguments: , Return: [Blog(id=3, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:17:17.965120Z, posted=true, author=user), Blog(id=8, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:32.944456Z, posted=true, author=user), Blog(id=9, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:37.437376Z, posted=true, author=user)]
+2024-06-17 14:06:06 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /blogs/all
+2024-06-17 14:06:06 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-06-17 14:06:06 [http-nio-8080-exec-8] DEBUG o.s.s.w.s.HttpSessionRequestCache - Saved request http://localhost:8080/blogs/all?continue to session
+2024-06-17 14:06:06 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2024-06-17 14:06:06 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@674cd2da
+2024-06-17 14:06:06 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2024-06-17 14:06:06 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@1b330ada
+2024-06-17 14:06:06 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2024-06-17 14:06:06 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-06-17 14:06:06 [http-nio-8080-exec-8] DEBUG o.s.s.w.s.HttpSessionRequestCache - Saved request http://localhost:8080/error?continue to session
+2024-06-17 14:06:06 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2024-06-17 14:06:06 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@674cd2da
+2024-06-17 14:06:06 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2024-06-17 14:06:06 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@1b330ada
+2024-06-17 14:06:12 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /blogs
+2024-06-17 14:06:12 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /blogs
+2024-06-17 14:06:12 [http-nio-8080-exec-9] INFO  g.p.S.Aspect.LoggingAspect - Executing method: getPostedBlogs, Arguments: []
+2024-06-17 14:06:12 [http-nio-8080-exec-9] INFO  g.p.S.Aspect.LoggingAspect - Method executed: getPostedBlogs, Arguments: , Return: [Blog(id=3, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:17:17.965120Z, posted=true, author=user), Blog(id=8, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:32.944456Z, posted=true, author=user), Blog(id=9, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:37.437376Z, posted=true, author=user)]
+2024-06-17 14:06:12 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-06-17 14:06:22 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /users/all
+2024-06-17 14:06:22 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-06-17 14:06:22 [http-nio-8080-exec-10] DEBUG o.s.s.w.s.HttpSessionRequestCache - Saved request http://localhost:8080/users/all?continue to session
+2024-06-17 14:06:22 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2024-06-17 14:06:22 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@674cd2da
+2024-06-17 14:06:22 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2024-06-17 14:06:22 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@1b330ada
+2024-06-17 14:06:22 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2024-06-17 14:06:22 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-06-17 14:06:22 [http-nio-8080-exec-10] DEBUG o.s.s.w.s.HttpSessionRequestCache - Saved request http://localhost:8080/error?continue to session
+2024-06-17 14:06:22 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2024-06-17 14:06:22 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@674cd2da
+2024-06-17 14:06:22 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2024-06-17 14:06:22 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@1b330ada
+2024-06-17 14:06:26 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /users/all
+2024-06-17 14:06:27 [http-nio-8080-exec-2] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2024-06-17 14:06:27 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=genspark.pj.SecureAuthenticationSystem.Config.UserInfoDetails@3af13632, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=E6DE5BD0015D849D9AD59C557A5F141B], Granted Authorities=[ADMIN]]
+2024-06-17 14:06:27 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /users/all
+2024-06-17 14:06:27 [http-nio-8080-exec-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity genspark.pj.SecureAuthenticationSystem.Controller.UserController.getAllUsers(); target is of class [genspark.pj.SecureAuthenticationSystem.Controller.UserController]
+2024-06-17 14:06:27 [http-nio-8080-exec-2] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity genspark.pj.SecureAuthenticationSystem.Controller.UserController.getAllUsers(); target is of class [genspark.pj.SecureAuthenticationSystem.Controller.UserController]
+2024-06-17 14:07:09 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /users/save/admin
+2024-06-17 14:07:09 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-06-17 14:07:09 [http-nio-8080-exec-1] DEBUG o.s.s.w.s.HttpSessionRequestCache - Saved request http://localhost:8080/users/save/admin?continue to session
+2024-06-17 14:07:09 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2024-06-17 14:07:09 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@674cd2da
+2024-06-17 14:07:09 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2024-06-17 14:07:09 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@1b330ada
+2024-06-17 14:07:09 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2024-06-17 14:07:09 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-06-17 14:07:09 [http-nio-8080-exec-1] DEBUG o.s.s.w.s.HttpSessionRequestCache - Saved request http://localhost:8080/error?continue to session
+2024-06-17 14:07:09 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2024-06-17 14:07:09 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@674cd2da
+2024-06-17 14:07:09 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2024-06-17 14:07:09 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@1b330ada
+2024-06-17 14:07:15 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /users/save/admin
+2024-06-17 14:07:15 [http-nio-8080-exec-3] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2024-06-17 14:07:15 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=genspark.pj.SecureAuthenticationSystem.Config.UserInfoDetails@4e68acef, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=E6DE5BD0015D849D9AD59C557A5F141B], Granted Authorities=[ADMIN]]
+2024-06-17 14:07:15 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /users/save/admin
+2024-06-17 14:07:15 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2024-06-17 14:07:15 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+2024-06-17 14:07:32 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /user/save/admin
+2024-06-17 14:07:32 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-06-17 14:07:32 [http-nio-8080-exec-4] DEBUG o.s.s.w.s.HttpSessionRequestCache - Saved request http://localhost:8080/user/save/admin?continue to session
+2024-06-17 14:07:32 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2024-06-17 14:07:32 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@674cd2da
+2024-06-17 14:07:32 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2024-06-17 14:07:32 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@1b330ada
+2024-06-17 14:07:32 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2024-06-17 14:07:32 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-06-17 14:07:32 [http-nio-8080-exec-4] DEBUG o.s.s.w.s.HttpSessionRequestCache - Saved request http://localhost:8080/error?continue to session
+2024-06-17 14:07:32 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@6fb8cfa7, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2024-06-17 14:07:32 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@674cd2da
+2024-06-17 14:07:32 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2024-06-17 14:07:32 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@1b330ada
+2024-06-17 14:07:35 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /user/save/admin
+2024-06-17 14:07:35 [http-nio-8080-exec-5] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2024-06-17 14:07:35 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=genspark.pj.SecureAuthenticationSystem.Config.UserInfoDetails@6e8c8d97, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=E6DE5BD0015D849D9AD59C557A5F141B], Granted Authorities=[ADMIN]]
+2024-06-17 14:07:35 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /user/save/admin
+2024-06-17 14:07:35 [http-nio-8080-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-06-17 14:07:35 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2024-06-17 14:07:35 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+2024-06-17 14:07:47 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing POST /user/save/admin
+2024-06-17 14:07:47 [http-nio-8080-exec-6] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2024-06-17 14:07:47 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=genspark.pj.SecureAuthenticationSystem.Config.UserInfoDetails@502a7528, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=E6DE5BD0015D849D9AD59C557A5F141B], Granted Authorities=[USER]]
+2024-06-17 14:07:47 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured POST /user/save/admin
+2024-06-17 14:07:47 [http-nio-8080-exec-6] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity genspark.pj.SecureAuthenticationSystem.Controller.UserController.saveUserAdmin(genspark.pj.SecureAuthenticationSystem.Entity.User); target is of class [genspark.pj.SecureAuthenticationSystem.Controller.UserController]
+2024-06-17 14:07:47 [http-nio-8080-exec-6] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Failed to authorize ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity genspark.pj.SecureAuthenticationSystem.Controller.UserController.saveUserAdmin(genspark.pj.SecureAuthenticationSystem.Entity.User); target is of class [genspark.pj.SecureAuthenticationSystem.Controller.UserController] with authorization manager org.springframework.security.config.annotation.method.configuration.DeferringObservationAuthorizationManager@7051d311 and decision ExpressionAuthorizationDecision [granted=false, expressionAttribute=hasAuthority('ADMIN')]
+2024-06-17 14:07:47 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AccessDeniedHandlerImpl - Responding with 403 status code
+2024-06-17 14:07:47 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing POST /error
+2024-06-17 14:07:47 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured POST /error
+2024-06-17 14:07:51 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing POST /user/save/admin
+2024-06-17 14:07:51 [http-nio-8080-exec-7] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2024-06-17 14:07:51 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=genspark.pj.SecureAuthenticationSystem.Config.UserInfoDetails@cb0468c, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=E6DE5BD0015D849D9AD59C557A5F141B], Granted Authorities=[ADMIN]]
+2024-06-17 14:07:51 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured POST /user/save/admin
+2024-06-17 14:07:51 [http-nio-8080-exec-7] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorizing method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity genspark.pj.SecureAuthenticationSystem.Controller.UserController.saveUserAdmin(genspark.pj.SecureAuthenticationSystem.Entity.User); target is of class [genspark.pj.SecureAuthenticationSystem.Controller.UserController]
+2024-06-17 14:07:51 [http-nio-8080-exec-7] DEBUG o.s.s.a.m.AuthorizationManagerBeforeMethodInterceptor - Authorized method invocation ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity genspark.pj.SecureAuthenticationSystem.Controller.UserController.saveUserAdmin(genspark.pj.SecureAuthenticationSystem.Entity.User); target is of class [genspark.pj.SecureAuthenticationSystem.Controller.UserController]

@@ -119,7 +119,7 @@ public class BlogServiceImpl implements BlogService{
             // Admin can also delete it too
             if (user.getRoles().equals("ADMIN") || blog.getAuthor().equals(curUserName)){
                 this.blogDAO.deleteById(id);
-                return "Product Deleted Successfully";
+                return "Blog Deleted Successfully";
             } else {
                 throw new RuntimeException("No Permission");
             }

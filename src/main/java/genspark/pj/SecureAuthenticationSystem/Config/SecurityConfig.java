@@ -26,7 +26,7 @@ public class SecurityConfig {
                         .requestMatchers("/", "/user/save").permitAll() // Everyone can see register and login
                         .requestMatchers(HttpMethod.GET,"/blogs").permitAll() // Everyone can see posted blogs
                         // Only user and admin are permitted to add/change/etc to blogs
-                        .requestMatchers("/blogs").hasAnyAuthority("USER", "ADMIN")
+                        .requestMatchers("/blogs/**").hasAnyAuthority("USER", "ADMIN")
                         .anyRequest().authenticated())
                 .httpBasic(withDefaults())
                 .formLogin(withDefaults())
