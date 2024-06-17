@@ -2775,3 +2775,639 @@ Caused by: org.hibernate.type.descriptor.java.spi.JdbcTypeRecommendationExceptio
 2024-06-17 12:58:02 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-06-17 12:58:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-06-17 12:58:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-17 13:04:35 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Starting SecureAuthenticationSystemApplication using Java 22.0.1 with PID 32236 (C:\projects\Genspark\SecureAuthenticationSystem\target\classes started by hyhuy in C:\projects\Genspark\SecureAuthenticationSystem)
+2024-06-17 13:04:35 [main] DEBUG g.p.S.SecureAuthenticationSystemApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-17 13:04:35 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - The following 1 profile is active: "prod"
+2024-06-17 13:04:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-17 13:04:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2024-06-17 13:04:36 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-17 13:04:36 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 13:04:36 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-17 13:04:36 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 13:04:36 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1276 ms
+2024-06-17 13:04:37 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-17 13:04:37 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-17 13:04:37 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-17 13:04:37 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-17 13:04:37 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-17 13:04:37 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18811c42
+2024-06-17 13:04:37 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-17 13:04:37 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-17 13:04:38 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-17 13:04:38 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:04:38 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-17 13:04:39 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-17 13:04:39 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-06-17 13:04:39 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-06-17 13:04:39 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@40f40221, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16441c13, org.springframework.security.web.context.SecurityContextHolderFilter@49e3b86b, org.springframework.security.web.header.HeaderWriterFilter@3b42d7df, org.springframework.web.filter.CorsFilter@6d3b59e2, org.springframework.security.web.authentication.logout.LogoutFilter@3d0c88f4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@279b83ea, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7d3a9061, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@164dfad2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@72e4905c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@771c4015, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60a3a0fa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76480730, org.springframework.security.web.access.ExceptionTranslationFilter@41cfcbb5, org.springframework.security.web.access.intercept.AuthorizationFilter@732ffb6a]
+2024-06-17 13:04:39 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-17 13:04:39 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Started SecureAuthenticationSystemApplication in 4.272 seconds (process running for 4.598)
+2024-06-17 13:04:41 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 13:04:41 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 13:04:41 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-06-17 13:20:26 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:20:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-17 13:20:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-17 13:20:30 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Starting SecureAuthenticationSystemApplication using Java 22.0.1 with PID 31692 (C:\projects\Genspark\SecureAuthenticationSystem\target\classes started by hyhuy in C:\projects\Genspark\SecureAuthenticationSystem)
+2024-06-17 13:20:30 [main] DEBUG g.p.S.SecureAuthenticationSystemApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-17 13:20:30 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - The following 1 profile is active: "prod"
+2024-06-17 13:20:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-17 13:20:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2024-06-17 13:20:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-17 13:20:31 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 13:20:31 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-17 13:20:31 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 13:20:31 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1176 ms
+2024-06-17 13:20:31 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-17 13:20:31 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-17 13:20:31 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-17 13:20:32 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-17 13:20:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-17 13:20:32 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@10a0d93a
+2024-06-17 13:20:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-17 13:20:32 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-17 13:20:32 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: genspark.pj.SecureAuthenticationSystem.Entity.User (class must be instantiated by Interceptor)
+2024-06-17 13:20:32 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-17 13:20:32 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:20:33 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-17 13:20:33 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'usi': No qualifying bean of type 'genspark.pj.SecureAuthenticationSystem.Services.UserServiceImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-06-17 13:20:33 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:20:33 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-17 13:20:33 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-17 13:20:33 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-17 13:20:33 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-17 13:20:33 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field usi in genspark.pj.SecureAuthenticationSystem.Controller.UserController required a bean of type 'genspark.pj.SecureAuthenticationSystem.Services.UserServiceImpl' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'genspark.pj.SecureAuthenticationSystem.Services.UserServiceImpl' in your configuration.
+
+2024-06-17 13:21:10 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Starting SecureAuthenticationSystemApplication using Java 22.0.1 with PID 13820 (C:\projects\Genspark\SecureAuthenticationSystem\target\classes started by hyhuy in C:\projects\Genspark\SecureAuthenticationSystem)
+2024-06-17 13:21:10 [main] DEBUG g.p.S.SecureAuthenticationSystemApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-17 13:21:10 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - The following 1 profile is active: "prod"
+2024-06-17 13:21:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-17 13:21:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2024-06-17 13:21:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-17 13:21:11 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 13:21:11 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-17 13:21:11 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 13:21:11 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1156 ms
+2024-06-17 13:21:12 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-17 13:21:12 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-17 13:21:12 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-17 13:21:12 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-17 13:21:12 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-17 13:21:12 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20a9f5fb
+2024-06-17 13:21:12 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-17 13:21:12 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-17 13:21:13 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: genspark.pj.SecureAuthenticationSystem.Entity.User (class must be instantiated by Interceptor)
+2024-06-17 13:21:13 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-17 13:21:13 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:21:13 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-17 13:21:13 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-17 13:21:13 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-06-17 13:21:13 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-06-17 13:21:14 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@74a37c91, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58581ab6, org.springframework.security.web.context.SecurityContextHolderFilter@4a03c4bc, org.springframework.security.web.header.HeaderWriterFilter@5bd585a5, org.springframework.web.filter.CorsFilter@3cd3cf6b, org.springframework.security.web.authentication.logout.LogoutFilter@164dfad2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@64a009e7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@797a5b31, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6f3f2340, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@522fdf0c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5aad4194, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@453ca7f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@179dc2, org.springframework.security.web.access.ExceptionTranslationFilter@256a25a8, org.springframework.security.web.access.intercept.AuthorizationFilter@1026a011]
+2024-06-17 13:21:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-17 13:21:14 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Started SecureAuthenticationSystemApplication in 3.973 seconds (process running for 4.267)
+2024-06-17 13:21:21 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 13:21:21 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 13:21:21 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-17 13:23:21 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:23:21 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-17 13:23:21 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-17 13:23:23 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Starting SecureAuthenticationSystemApplication using Java 22.0.1 with PID 35648 (C:\projects\Genspark\SecureAuthenticationSystem\target\classes started by hyhuy in C:\projects\Genspark\SecureAuthenticationSystem)
+2024-06-17 13:23:23 [main] DEBUG g.p.S.SecureAuthenticationSystemApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-17 13:23:23 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - The following 1 profile is active: "prod"
+2024-06-17 13:23:23 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-17 13:23:23 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2024-06-17 13:23:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-17 13:23:24 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 13:23:24 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-17 13:23:24 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 13:23:24 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1159 ms
+2024-06-17 13:23:24 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-17 13:23:24 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-17 13:23:24 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-17 13:23:24 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-17 13:23:24 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-17 13:23:25 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20a9f5fb
+2024-06-17 13:23:25 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-17 13:23:25 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-17 13:23:25 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: genspark.pj.SecureAuthenticationSystem.Entity.User (class must be instantiated by Interceptor)
+2024-06-17 13:23:25 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-17 13:23:25 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:23:25 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-17 13:23:26 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-17 13:23:26 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-06-17 13:23:26 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-06-17 13:23:26 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@74a37c91, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58581ab6, org.springframework.security.web.context.SecurityContextHolderFilter@4a03c4bc, org.springframework.security.web.header.HeaderWriterFilter@5bd585a5, org.springframework.web.filter.CorsFilter@3cd3cf6b, org.springframework.security.web.authentication.logout.LogoutFilter@164dfad2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@64a009e7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@797a5b31, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6f3f2340, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@522fdf0c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5aad4194, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@453ca7f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@179dc2, org.springframework.security.web.access.ExceptionTranslationFilter@256a25a8, org.springframework.security.web.access.intercept.AuthorizationFilter@1026a011]
+2024-06-17 13:23:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-17 13:23:26 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Started SecureAuthenticationSystemApplication in 4.102 seconds (process running for 4.402)
+2024-06-17 13:23:29 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 13:23:29 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 13:23:29 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-17 13:26:38 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:26:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-17 13:26:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-17 13:26:42 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Starting SecureAuthenticationSystemApplication using Java 22.0.1 with PID 31396 (C:\projects\Genspark\SecureAuthenticationSystem\target\classes started by hyhuy in C:\projects\Genspark\SecureAuthenticationSystem)
+2024-06-17 13:26:42 [main] DEBUG g.p.S.SecureAuthenticationSystemApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-17 13:26:42 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - The following 1 profile is active: "prod"
+2024-06-17 13:26:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-17 13:26:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 2 JPA repository interfaces.
+2024-06-17 13:26:43 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-17 13:26:43 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 13:26:43 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-17 13:26:43 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 13:26:43 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1183 ms
+2024-06-17 13:26:43 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-17 13:26:43 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-17 13:26:43 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-17 13:26:43 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-17 13:26:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-17 13:26:44 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@dc8b2ff
+2024-06-17 13:26:44 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-17 13:26:44 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-17 13:26:44 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: genspark.pj.SecureAuthenticationSystem.Entity.User (class must be instantiated by Interceptor)
+2024-06-17 13:26:44 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-17 13:26:44 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:26:44 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-17 13:26:45 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-17 13:26:45 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-06-17 13:26:45 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-06-17 13:26:45 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@63604641, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1313dea8, org.springframework.security.web.context.SecurityContextHolderFilter@13d7d1a8, org.springframework.security.web.header.HeaderWriterFilter@333813e7, org.springframework.web.filter.CorsFilter@74bca236, org.springframework.security.web.authentication.logout.LogoutFilter@54a04eae, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@10fef6da, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3c6c87fa, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@526fbb80, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2cbb9702, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5827908c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ed83e36, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33dcbdc2, org.springframework.security.web.access.ExceptionTranslationFilter@5d41b929, org.springframework.security.web.access.intercept.AuthorizationFilter@10587ce5]
+2024-06-17 13:26:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-17 13:26:45 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Started SecureAuthenticationSystemApplication in 4.225 seconds (process running for 4.519)
+2024-06-17 13:26:55 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 13:26:55 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 13:26:55 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-06-17 13:28:01 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:28:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-17 13:28:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-17 13:28:04 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Starting SecureAuthenticationSystemApplication using Java 22.0.1 with PID 23296 (C:\projects\Genspark\SecureAuthenticationSystem\target\classes started by hyhuy in C:\projects\Genspark\SecureAuthenticationSystem)
+2024-06-17 13:28:04 [main] DEBUG g.p.S.SecureAuthenticationSystemApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-17 13:28:04 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - The following 1 profile is active: "prod"
+2024-06-17 13:28:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-17 13:28:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2024-06-17 13:28:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-17 13:28:05 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 13:28:05 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-17 13:28:05 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 13:28:05 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1215 ms
+2024-06-17 13:28:05 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-17 13:28:05 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-17 13:28:06 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-17 13:28:06 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-17 13:28:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-17 13:28:06 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20a9f5fb
+2024-06-17 13:28:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-17 13:28:06 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-17 13:28:07 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: genspark.pj.SecureAuthenticationSystem.Entity.User (class must be instantiated by Interceptor)
+2024-06-17 13:28:07 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-17 13:28:07 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:28:07 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-17 13:28:07 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-17 13:28:07 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-06-17 13:28:07 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-06-17 13:28:08 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@58581ab6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3cd3cf6b, org.springframework.security.web.context.SecurityContextHolderFilter@3d0c88f4, org.springframework.security.web.header.HeaderWriterFilter@65c040c9, org.springframework.web.filter.CorsFilter@6f3f2340, org.springframework.security.web.authentication.logout.LogoutFilter@76480730, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@10587ce5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@13d7d1a8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@179dc2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@64a009e7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@50a1c2f3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d41b929, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1802badc, org.springframework.security.web.access.ExceptionTranslationFilter@68f67bbd, org.springframework.security.web.access.intercept.AuthorizationFilter@63b95a30]
+2024-06-17 13:28:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-17 13:28:08 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Started SecureAuthenticationSystemApplication in 4.177 seconds (process running for 4.536)
+2024-06-17 13:28:11 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 13:28:11 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 13:28:11 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-06-17 13:30:35 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:30:35 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-17 13:30:35 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-17 13:30:38 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Starting SecureAuthenticationSystemApplication using Java 22.0.1 with PID 34824 (C:\projects\Genspark\SecureAuthenticationSystem\target\classes started by hyhuy in C:\projects\Genspark\SecureAuthenticationSystem)
+2024-06-17 13:30:38 [main] DEBUG g.p.S.SecureAuthenticationSystemApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-17 13:30:38 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - The following 1 profile is active: "prod"
+2024-06-17 13:30:38 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-17 13:30:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2024-06-17 13:30:39 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-17 13:30:39 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 13:30:39 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-17 13:30:39 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 13:30:39 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1195 ms
+2024-06-17 13:30:39 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-17 13:30:39 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-17 13:30:39 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-17 13:30:40 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-17 13:30:40 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-17 13:30:40 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d617b07
+2024-06-17 13:30:40 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-17 13:30:40 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-17 13:30:40 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: genspark.pj.SecureAuthenticationSystem.Entity.User (class must be instantiated by Interceptor)
+2024-06-17 13:30:41 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-17 13:30:41 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:30:41 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-17 13:30:41 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-17 13:30:41 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-06-17 13:30:41 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-06-17 13:30:42 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@10fef6da, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1da77a43, org.springframework.security.web.context.SecurityContextHolderFilter@292237cd, org.springframework.security.web.header.HeaderWriterFilter@5d41b929, org.springframework.web.filter.CorsFilter@63604641, org.springframework.security.web.authentication.logout.LogoutFilter@474a63d9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3a089620, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4ce66169, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1313dea8, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1802badc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13d7d1a8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5827908c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@74bca236, org.springframework.security.web.access.ExceptionTranslationFilter@50a1c2f3, org.springframework.security.web.access.intercept.AuthorizationFilter@522fdf0c]
+2024-06-17 13:30:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-17 13:30:42 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Started SecureAuthenticationSystemApplication in 4.166 seconds (process running for 4.459)
+2024-06-17 13:30:51 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 13:30:51 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 13:30:51 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-17 13:36:31 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:36:31 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-17 13:36:31 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-17 13:36:34 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Starting SecureAuthenticationSystemApplication using Java 22.0.1 with PID 8844 (C:\projects\Genspark\SecureAuthenticationSystem\target\classes started by hyhuy in C:\projects\Genspark\SecureAuthenticationSystem)
+2024-06-17 13:36:34 [main] DEBUG g.p.S.SecureAuthenticationSystemApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-17 13:36:34 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - The following 1 profile is active: "prod"
+2024-06-17 13:36:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-17 13:36:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2024-06-17 13:36:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-17 13:36:35 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 13:36:35 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-17 13:36:35 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 13:36:35 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1195 ms
+2024-06-17 13:36:35 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-17 13:36:35 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-17 13:36:35 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-17 13:36:36 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-17 13:36:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-17 13:36:36 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1308ef19
+2024-06-17 13:36:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-17 13:36:36 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-17 13:36:36 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: genspark.pj.SecureAuthenticationSystem.Entity.User (class must be instantiated by Interceptor)
+2024-06-17 13:36:36 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-17 13:36:37 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:36:37 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-17 13:36:37 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-17 13:36:37 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-06-17 13:36:37 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-06-17 13:36:37 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@56f3f9da, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56587330, org.springframework.security.web.context.SecurityContextHolderFilter@53d0cf4d, org.springframework.security.web.header.HeaderWriterFilter@2459715c, org.springframework.web.filter.CorsFilter@227cba85, org.springframework.security.web.authentication.logout.LogoutFilter@6f636de3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2f0b7b6d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@164dfad2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@19e552a3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3e37c38f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d7645b2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@279b83ea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5091456c, org.springframework.security.web.access.ExceptionTranslationFilter@732ffb6a, org.springframework.security.web.access.intercept.AuthorizationFilter@2cbb9702]
+2024-06-17 13:36:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-17 13:36:38 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Started SecureAuthenticationSystemApplication in 4.109 seconds (process running for 4.412)
+2024-06-17 13:36:48 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 13:36:48 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 13:36:48 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-17 13:42:08 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:42:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-17 13:42:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-17 13:42:11 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Starting SecureAuthenticationSystemApplication using Java 22.0.1 with PID 11556 (C:\projects\Genspark\SecureAuthenticationSystem\target\classes started by hyhuy in C:\projects\Genspark\SecureAuthenticationSystem)
+2024-06-17 13:42:11 [main] DEBUG g.p.S.SecureAuthenticationSystemApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-17 13:42:11 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - The following 1 profile is active: "prod"
+2024-06-17 13:42:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-17 13:42:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2024-06-17 13:42:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-17 13:42:12 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 13:42:12 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-17 13:42:12 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 13:42:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1227 ms
+2024-06-17 13:42:13 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-17 13:42:13 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-17 13:42:13 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-17 13:42:13 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-17 13:42:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-17 13:42:13 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d977a20
+2024-06-17 13:42:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-17 13:42:13 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-17 13:42:14 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: genspark.pj.SecureAuthenticationSystem.Entity.User (class must be instantiated by Interceptor)
+2024-06-17 13:42:14 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-17 13:42:14 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:42:14 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-17 13:42:14 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-17 13:42:14 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-06-17 13:42:14 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-06-17 13:42:15 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@63b95a30, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@353aadd7, org.springframework.security.web.context.SecurityContextHolderFilter@34989ceb, org.springframework.security.web.header.HeaderWriterFilter@307ca947, org.springframework.web.filter.CorsFilter@39595a8, org.springframework.security.web.authentication.logout.LogoutFilter@4ce66169, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4664fef, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@11736ebc, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@26169be3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@54a04eae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9c88323, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1dc47df3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f573dcb, org.springframework.security.web.access.ExceptionTranslationFilter@8d40f07, org.springframework.security.web.access.intercept.AuthorizationFilter@405a296e]
+2024-06-17 13:42:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-17 13:42:15 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Started SecureAuthenticationSystemApplication in 4.187 seconds (process running for 4.498)
+2024-06-17 13:42:21 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 13:42:21 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 13:42:21 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-17 13:45:50 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:45:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-17 13:45:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-17 13:45:53 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Starting SecureAuthenticationSystemApplication using Java 22.0.1 with PID 376 (C:\projects\Genspark\SecureAuthenticationSystem\target\classes started by hyhuy in C:\projects\Genspark\SecureAuthenticationSystem)
+2024-06-17 13:45:53 [main] DEBUG g.p.S.SecureAuthenticationSystemApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-17 13:45:53 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - The following 1 profile is active: "prod"
+2024-06-17 13:45:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-17 13:45:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2024-06-17 13:45:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-17 13:45:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 13:45:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-17 13:45:54 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 13:45:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1200 ms
+2024-06-17 13:45:54 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-17 13:45:54 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-17 13:45:54 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-17 13:45:55 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-17 13:45:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-17 13:45:55 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d977a20
+2024-06-17 13:45:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-17 13:45:55 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-17 13:45:55 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: genspark.pj.SecureAuthenticationSystem.Entity.User (class must be instantiated by Interceptor)
+2024-06-17 13:45:55 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-17 13:45:55 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:45:56 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-17 13:45:56 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-17 13:45:56 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-06-17 13:45:56 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-06-17 13:45:56 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@353aadd7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39595a8, org.springframework.security.web.context.SecurityContextHolderFilter@61fb3dae, org.springframework.security.web.header.HeaderWriterFilter@61d1315b, org.springframework.web.filter.CorsFilter@26169be3, org.springframework.security.web.authentication.logout.LogoutFilter@53d0cf4d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1026a011, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4a03c4bc, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@f573dcb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4664fef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d4bdb75, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@256a25a8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f636de3, org.springframework.security.web.access.ExceptionTranslationFilter@196c8b93, org.springframework.security.web.access.intercept.AuthorizationFilter@77198cce]
+2024-06-17 13:45:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-17 13:45:57 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Started SecureAuthenticationSystemApplication in 4.147 seconds (process running for 4.448)
+2024-06-17 13:46:00 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 13:46:00 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 13:46:00 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-17 13:46:35 [http-nio-8080-exec-10] INFO  g.p.S.Aspect.LoggingAspect - Executing method: getPostedBlogs, Arguments: []
+2024-06-17 13:46:35 [http-nio-8080-exec-10] INFO  g.p.S.Aspect.LoggingAspect - Method executed: getPostedBlogs, Arguments: , Return: [Blog(id=3, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:17:17.965120Z, posted=true, author=user), Blog(id=8, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:32.944456Z, posted=true, author=user), Blog(id=9, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:37.437376Z, posted=true, author=user)]
+2024-06-17 13:47:12 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:47:12 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-17 13:47:12 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-17 13:47:15 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Starting SecureAuthenticationSystemApplication using Java 22.0.1 with PID 5740 (C:\projects\Genspark\SecureAuthenticationSystem\target\classes started by hyhuy in C:\projects\Genspark\SecureAuthenticationSystem)
+2024-06-17 13:47:15 [main] DEBUG g.p.S.SecureAuthenticationSystemApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-17 13:47:15 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - The following 1 profile is active: "prod"
+2024-06-17 13:47:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-17 13:47:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+2024-06-17 13:47:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-17 13:47:16 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 13:47:16 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-17 13:47:16 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 13:47:16 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1210 ms
+2024-06-17 13:47:16 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-17 13:47:16 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-17 13:47:16 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-17 13:47:16 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-17 13:47:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-17 13:47:17 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18811c42
+2024-06-17 13:47:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-17 13:47:17 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-17 13:47:17 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: genspark.pj.SecureAuthenticationSystem.Entity.User (class must be instantiated by Interceptor)
+2024-06-17 13:47:17 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-17 13:47:17 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:47:17 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-17 13:47:18 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-17 13:47:18 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-06-17 13:47:18 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-06-17 13:47:18 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Injection of autowired dependencies failed
+2024-06-17 13:47:18 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:47:18 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-17 13:47:18 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-17 13:47:18 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-17 13:47:18 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-17 13:47:18 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at genspark.pj.SecureAuthenticationSystem.SecureAuthenticationSystemApplication.main(SecureAuthenticationSystemApplication.java:10)
+Caused by: java.lang.RuntimeException: Could not postProcess org.springframework.security.config.annotation.web.builders.WebSecurity@537979aa of type class org.springframework.security.config.annotation.web.builders.WebSecurity
+	at org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor.postProcess(AutowireBeanFactoryObjectPostProcessor.java:71)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.setFilterChainProxySecurityConfigurer(WebSecurityConfiguration.java:148)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:853)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospectorRequestTransformer': Cannot resolve reference to bean 'mvcHandlerMappingIntrospector' while setting constructor argument
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:682)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:225)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1323)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1284)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:486)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$1.getIfUnique(DefaultListableBeanFactory.java:438)
+	at org.springframework.security.config.annotation.web.builders.WebSecurity.setApplicationContext(WebSecurity.java:397)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:110)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:85)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1780)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:412)
+	at org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor.initializeBeanIfNeeded(AutowireBeanFactoryObjectPostProcessor.java:98)
+	at org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor.postProcess(AutowireBeanFactoryObjectPostProcessor.java:67)
+	... 23 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'userController' method 
+genspark.pj.SecureAuthenticationSystem.Controller.UserController#saveUser(User)
+to {POST [/user/save]}: There is already 'blogController' bean method
+genspark.pj.SecureAuthenticationSystem.Controller.BlogController#saveUser(User) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 46 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'userController' method 
+genspark.pj.SecureAuthenticationSystem.Controller.UserController#saveUser(User)
+to {POST [/user/save]}: There is already 'blogController' bean method
+genspark.pj.SecureAuthenticationSystem.Controller.BlogController#saveUser(User) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:665)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1388)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:368)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.initHandlerMappings(HandlerMappingIntrospector.java:130)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.afterPropertiesSet(HandlerMappingIntrospector.java:118)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	... 53 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
+genspark.pj.SecureAuthenticationSystem.Controller.UserController#saveUser(User)
+to {POST [/user/save]}: There is already 'blogController' bean method
+genspark.pj.SecureAuthenticationSystem.Controller.BlogController#saveUser(User) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:674)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:636)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:508)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:84)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:986)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:239)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	... 66 common frames omitted
+2024-06-17 13:47:39 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Starting SecureAuthenticationSystemApplication using Java 22.0.1 with PID 30148 (C:\projects\Genspark\SecureAuthenticationSystem\target\classes started by hyhuy in C:\projects\Genspark\SecureAuthenticationSystem)
+2024-06-17 13:47:39 [main] DEBUG g.p.S.SecureAuthenticationSystemApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-17 13:47:39 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - The following 1 profile is active: "prod"
+2024-06-17 13:47:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-17 13:47:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2024-06-17 13:47:40 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-17 13:47:40 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 13:47:40 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-17 13:47:40 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 13:47:40 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1166 ms
+2024-06-17 13:47:41 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-17 13:47:41 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-17 13:47:41 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-17 13:47:41 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-17 13:47:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-17 13:47:41 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@dc8b2ff
+2024-06-17 13:47:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-17 13:47:41 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-17 13:47:42 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: genspark.pj.SecureAuthenticationSystem.Entity.User (class must be instantiated by Interceptor)
+2024-06-17 13:47:42 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-17 13:47:42 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:47:42 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-17 13:47:42 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-17 13:47:42 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-06-17 13:47:42 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-06-17 13:47:43 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@526fbb80, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33dcbdc2, org.springframework.security.web.context.SecurityContextHolderFilter@732ffb6a, org.springframework.security.web.header.HeaderWriterFilter@13d7d1a8, org.springframework.web.filter.CorsFilter@3e37c38f, org.springframework.security.web.authentication.logout.LogoutFilter@63b95a30, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1313dea8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@279b83ea, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2f0b7b6d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@63604641, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2459715c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ce66169, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1766b7, org.springframework.security.web.access.ExceptionTranslationFilter@292237cd, org.springframework.security.web.access.intercept.AuthorizationFilter@3cd3cf6b]
+2024-06-17 13:47:43 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-17 13:47:43 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Started SecureAuthenticationSystemApplication in 4.068 seconds (process running for 4.359)
+2024-06-17 13:47:45 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 13:47:45 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 13:47:45 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-17 13:47:51 [http-nio-8080-exec-4] INFO  g.p.S.Aspect.LoggingAspect - Executing method: getPostedBlogs, Arguments: []
+2024-06-17 13:47:51 [http-nio-8080-exec-4] INFO  g.p.S.Aspect.LoggingAspect - Method executed: getPostedBlogs, Arguments: , Return: [Blog(id=3, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:17:17.965120Z, posted=true, author=user), Blog(id=8, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:32.944456Z, posted=true, author=user), Blog(id=9, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:37.437376Z, posted=true, author=user)]
+2024-06-17 13:48:38 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:48:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-17 13:48:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-17 13:48:41 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Starting SecureAuthenticationSystemApplication using Java 22.0.1 with PID 31056 (C:\projects\Genspark\SecureAuthenticationSystem\target\classes started by hyhuy in C:\projects\Genspark\SecureAuthenticationSystem)
+2024-06-17 13:48:41 [main] DEBUG g.p.S.SecureAuthenticationSystemApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-17 13:48:41 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - The following 1 profile is active: "prod"
+2024-06-17 13:48:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-17 13:48:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+2024-06-17 13:48:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-17 13:48:42 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 13:48:42 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-17 13:48:42 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 13:48:42 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1173 ms
+2024-06-17 13:48:42 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-17 13:48:42 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-17 13:48:42 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-17 13:48:43 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-17 13:48:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-17 13:48:43 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71a2df1
+2024-06-17 13:48:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-17 13:48:43 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-17 13:48:43 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: genspark.pj.SecureAuthenticationSystem.Entity.User (class must be instantiated by Interceptor)
+2024-06-17 13:48:43 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-17 13:48:43 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:48:44 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-17 13:48:44 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-17 13:48:44 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-06-17 13:48:44 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-06-17 13:48:44 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@179dc2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1802badc, org.springframework.security.web.context.SecurityContextHolderFilter@453ca7f, org.springframework.security.web.header.HeaderWriterFilter@3d0c88f4, org.springframework.web.filter.CorsFilter@3a089620, org.springframework.security.web.authentication.logout.LogoutFilter@e7b7395, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3cd3cf6b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@732ffb6a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2cbb9702, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@58581ab6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6dd0e2f4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@292237cd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10fef6da, org.springframework.security.web.access.ExceptionTranslationFilter@11736ebc, org.springframework.security.web.access.intercept.AuthorizationFilter@26169be3]
+2024-06-17 13:48:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-17 13:48:45 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Started SecureAuthenticationSystemApplication in 4.014 seconds (process running for 4.302)
+2024-06-17 13:48:47 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 13:48:47 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 13:48:47 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-17 13:48:52 [http-nio-8080-exec-3] INFO  g.p.S.Aspect.LoggingAspect - Executing method: getPostedBlogs, Arguments: []
+2024-06-17 13:48:52 [http-nio-8080-exec-3] INFO  g.p.S.Aspect.LoggingAspect - Method executed: getPostedBlogs, Arguments: , Return: [Blog(id=3, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:17:17.965120Z, posted=true, author=user), Blog(id=8, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:32.944456Z, posted=true, author=user), Blog(id=9, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:37.437376Z, posted=true, author=user)]
+2024-06-17 13:50:10 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:50:10 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-17 13:50:10 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-17 13:50:12 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Starting SecureAuthenticationSystemApplication using Java 22.0.1 with PID 36332 (C:\projects\Genspark\SecureAuthenticationSystem\target\classes started by hyhuy in C:\projects\Genspark\SecureAuthenticationSystem)
+2024-06-17 13:50:12 [main] DEBUG g.p.S.SecureAuthenticationSystemApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-17 13:50:12 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - The following 1 profile is active: "prod"
+2024-06-17 13:50:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-17 13:50:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2024-06-17 13:50:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-17 13:50:14 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 13:50:14 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-17 13:50:14 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 13:50:14 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1150 ms
+2024-06-17 13:50:14 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-17 13:50:14 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-17 13:50:14 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-17 13:50:14 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-17 13:50:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-17 13:50:14 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54e0f76f
+2024-06-17 13:50:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-17 13:50:14 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-17 13:50:15 [main] INFO  o.h.m.i.EntityInstantiatorPojoStandard - HHH000182: No default (no-argument) constructor for class: genspark.pj.SecureAuthenticationSystem.Entity.User (class must be instantiated by Interceptor)
+2024-06-17 13:50:15 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-17 13:50:15 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:50:15 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-17 13:50:16 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-17 13:50:16 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-06-17 13:50:16 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-06-17 13:50:16 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7f9083b4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@40f40221, org.springframework.security.web.context.SecurityContextHolderFilter@29cd48bd, org.springframework.security.web.header.HeaderWriterFilter@40941b54, org.springframework.web.filter.CorsFilter@16441c13, org.springframework.security.web.authentication.logout.LogoutFilter@4a03c4bc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@72e4905c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@704c3ca2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6d3b59e2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@d7645b2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64b262a7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34d776eb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@164dfad2, org.springframework.security.web.access.ExceptionTranslationFilter@6b28d4e4, org.springframework.security.web.access.intercept.AuthorizationFilter@5827908c]
+2024-06-17 13:50:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-17 13:50:16 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Started SecureAuthenticationSystemApplication in 4.092 seconds (process running for 4.374)
+2024-06-17 13:50:18 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 13:50:18 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 13:50:18 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-17 13:51:01 [http-nio-8080-exec-6] INFO  g.p.S.Aspect.LoggingAspect - Executing method: getPostedBlogs, Arguments: []
+2024-06-17 13:51:01 [http-nio-8080-exec-6] INFO  g.p.S.Aspect.LoggingAspect - Method executed: getPostedBlogs, Arguments: , Return: [Blog(id=3, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:17:17.965120Z, posted=true, author=user), Blog(id=8, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:32.944456Z, posted=true, author=user), Blog(id=9, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:37.437376Z, posted=true, author=user)]
+2024-06-17 13:51:07 [http-nio-8080-exec-8] INFO  g.p.S.Aspect.LoggingAspect - Executing method: getPostedBlogs, Arguments: []
+2024-06-17 13:51:07 [http-nio-8080-exec-8] INFO  g.p.S.Aspect.LoggingAspect - Method executed: getPostedBlogs, Arguments: , Return: [Blog(id=3, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:17:17.965120Z, posted=true, author=user), Blog(id=8, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:32.944456Z, posted=true, author=user), Blog(id=9, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:37.437376Z, posted=true, author=user)]
+2024-06-17 13:51:48 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:51:48 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-17 13:51:48 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-17 13:51:52 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Starting SecureAuthenticationSystemApplication using Java 22.0.1 with PID 14848 (C:\projects\Genspark\SecureAuthenticationSystem\target\classes started by hyhuy in C:\projects\Genspark\SecureAuthenticationSystem)
+2024-06-17 13:51:52 [main] DEBUG g.p.S.SecureAuthenticationSystemApplication - Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-17 13:51:52 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - The following 1 profile is active: "prod"
+2024-06-17 13:51:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-17 13:51:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+2024-06-17 13:51:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-06-17 13:51:53 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-17 13:51:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-17 13:51:53 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-17 13:51:53 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1214 ms
+2024-06-17 13:51:53 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-17 13:51:54 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-17 13:51:54 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-17 13:51:54 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-17 13:51:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-17 13:51:54 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@165aa43a
+2024-06-17 13:51:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-17 13:51:54 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-17 13:51:55 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-17 13:51:55 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-17 13:51:55 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-17 13:51:55 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-17 13:51:55 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-06-17 13:51:55 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-06-17 13:51:56 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@76480730, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@405a296e, org.springframework.security.web.context.SecurityContextHolderFilter@60a3a0fa, org.springframework.security.web.header.HeaderWriterFilter@64b262a7, org.springframework.web.filter.CorsFilter@77198cce, org.springframework.security.web.authentication.logout.LogoutFilter@5d41b929, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6d3b59e2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@307ca947, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@e7b7395, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@16441c13, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27aa700, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@704c3ca2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@383c94ed, org.springframework.security.web.access.ExceptionTranslationFilter@29cd48bd, org.springframework.security.web.access.intercept.AuthorizationFilter@4ce66169]
+2024-06-17 13:51:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-06-17 13:51:56 [main] INFO  g.p.S.SecureAuthenticationSystemApplication - Started SecureAuthenticationSystemApplication in 4.237 seconds (process running for 4.526)
+2024-06-17 13:52:01 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-17 13:52:01 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-17 13:52:01 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-17 13:52:01 [http-nio-8080-exec-2] INFO  g.p.S.Aspect.LoggingAspect - Executing method: getPostedBlogs, Arguments: []
+2024-06-17 13:52:01 [http-nio-8080-exec-2] INFO  g.p.S.Aspect.LoggingAspect - Method executed: getPostedBlogs, Arguments: , Return: [Blog(id=3, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:17:17.965120Z, posted=true, author=user), Blog(id=8, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:32.944456Z, posted=true, author=user), Blog(id=9, title=Blog, content=BLOG BLOG BLOG, tags=[Blog, User, First], timestamp=2024-06-17T18:21:37.437376Z, posted=true, author=user)]
