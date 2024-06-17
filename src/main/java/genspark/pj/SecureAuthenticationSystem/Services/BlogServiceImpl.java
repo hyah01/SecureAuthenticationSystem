@@ -1,8 +1,12 @@
 package genspark.pj.SecureAuthenticationSystem.Services;
 
 import genspark.pj.SecureAuthenticationSystem.Entity.Blog;
+import genspark.pj.SecureAuthenticationSystem.Entity.User;
 import genspark.pj.SecureAuthenticationSystem.Repository.BlogDAO;
+import genspark.pj.SecureAuthenticationSystem.Repository.UserDAO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.context.SecurityContextImpl;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -13,6 +17,8 @@ import java.util.Optional;
 public class BlogServiceImpl implements BlogService{
     @Autowired
     private BlogDAO blogDAO;
+    @Autowired
+    private UserDAO userDAO;
     @Override
     public List<Blog> getAllBlogs() {
         return this.blogDAO.findAll();
@@ -29,8 +35,8 @@ public class BlogServiceImpl implements BlogService{
     }
 
     @Override
-    public Blog getById(long blogid) {
-        Optional<Blog> b = this.blogDAO.findById(blogid);
+    public Blog getById(long id) {
+        Optional<Blog> b = this.blogDAO.findById(id);
         Blog blog = null;
         if (b.isPresent()) {
             blog = b.get();
@@ -81,8 +87,21 @@ public class BlogServiceImpl implements BlogService{
 
     @Override
     public String deleteBlog(long id) {
-        this.blogDAO.deleteById(id);
-        return "Product Deleted Successfully";
+        Blog blog = this.blogDAO.findById(id).orElseThrow(() -> new RuntimeException(" Blog not found"));
+        String curUserName = SecurityContextHolder.getContext().getAuthentication().getName();
+        Optional<User> curUser = userDAO.findByUsername(curUserName);
+        if (curUser.isPresent()){
+            User user = curUser.get();
+            if (user.getRoles().equals("ADMIN") || blog.getAuthor().equals(curUserName)){
+                this.blogDAO.deleteById(id);
+                return "Product Deleted Successfully";
+            } else {
+                throw new RuntimeException("No Permission");
+            }
+        } else {
+            throw new RuntimeException("User Not Found");
+        }
+
     }
 
     @Override

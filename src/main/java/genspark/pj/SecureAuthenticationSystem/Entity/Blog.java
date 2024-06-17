@@ -1,10 +1,8 @@
 package genspark.pj.SecureAuthenticationSystem.Entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.security.core.context.SecurityContextHolder;
 
 import java.time.Instant;
 import java.util.List;
@@ -20,18 +18,19 @@ public class Blog {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
-    private String author;
     private String content;
     private List<String> tags;
     private Instant timestamp;
-    private Boolean posted;
+    private Boolean posted = false;
+    private String author;
 
-    public Blog(String title, String author, List<String> tags, String category) {
-        this.title = title;
-        this.content = author;
-        this.tags = tags;
-        this.author = category;
-        this.posted = false;
+    @PrePersist
+    protected void onCreate(){
+        this.timestamp = Instant.now();
+        this. author = SecurityContextHolder.getContext().getAuthentication().getName();
+        if (this.posted == null){
+            this.posted = false;
+        }
     }
 
 }

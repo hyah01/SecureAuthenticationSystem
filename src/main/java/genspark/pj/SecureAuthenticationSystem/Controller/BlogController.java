@@ -74,8 +74,8 @@ public class BlogController {
 
     @GetMapping("/blogs/{id}")
     @PreAuthorize("hasAuthority('ADMIN')")
-    public ResponseEntity<Object> getBlogById(@PathVariable Long blogid){
-        return ResponseEntity.ok(bsl.getById(blogid));
+    public ResponseEntity<Object> getBlogById(@PathVariable Long id){
+        return ResponseEntity.ok(bsl.getById(id));
     }
 
     @GetMapping("/blogs/title")
@@ -112,6 +112,7 @@ public class BlogController {
         return ResponseEntity.ok(bsl.deleteBlog(blogid));
     }
 
+    @PreAuthorize("hasAuthority('ADMIN')")
     @PutMapping("/blogs/tg/{id}")
     public ResponseEntity<Object> togglePostedStatus(@PathVariable Long id) {
         return ResponseEntity.ok(bsl.publishBlog(id));
