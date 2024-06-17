@@ -23,6 +23,7 @@ import java.util.stream.IntStream;
 @EnableAspectJAutoProxy
 @Slf4j
 public class LoggingAspect {
+    // When calling the method it will log which method is being called and the param it has
     @Before("execution(* genspark.pj.SecureAuthenticationSystem.Services.BlogService.*(..))")
     public void logBeforeService(JoinPoint joinPoint){
         String methodName = joinPoint.getSignature().getName();
@@ -31,6 +32,7 @@ public class LoggingAspect {
         log.info("Executing method: " + methodName + ", Arguments: " + argsString);
     }
 
+    // After it finished, it will log the result of the method
     @AfterReturning(pointcut = "execution(* genspark.pj.SecureAuthenticationSystem.Services.BlogService.*(..))", returning = "result")
     public void logAfterService(JoinPoint joinPoint, Object result){
         String methodName = joinPoint.getSignature().getName();
@@ -47,6 +49,7 @@ public class LoggingAspect {
             log.info("No Blog with the criteria: " + argsString);
         }
     }
+    // Helper method use to see if the method executed correctly
     private boolean isEmpty(Object obj) {
         if (obj == null) {
             return true;

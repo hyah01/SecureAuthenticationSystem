@@ -2,6 +2,7 @@ package genspark.pj.SecureAuthenticationSystem.Config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
@@ -22,8 +23,10 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests(auth -> auth
-                // NOTE // Need to Change Once Controller is up
-                        .requestMatchers("/", "/user/save", "/blogs").permitAll()
+                        .requestMatchers("/", "/user/save").permitAll() // Everyone can see register and login
+                        .requestMatchers(HttpMethod.GET,"/blogs").permitAll() // Everyone can see posted blogs
+                        // Only user and admin are permitted to add/change/etc to blogs
+                        .requestMatchers("/blogs").hasAnyAuthority("USER", "ADMIN")
                         .anyRequest().authenticated())
                 .httpBasic(withDefaults())
                 .formLogin(withDefaults())

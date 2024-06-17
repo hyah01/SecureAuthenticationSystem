@@ -18,6 +18,9 @@ public interface BlogDAO extends JpaRepository<Blog, Long> {
     @Query("SELECT b FROM Blog b WHERE b.posted = false")
     List<Blog> getUnPostedBlogs();
 
+    @Query("SELECT b FROM Blog b WHERE b.posted = false AND b.author = :author")
+    List<Blog> getMyUnPostedBlogs(String author);
+
     @Query("SELECT b FROM Blog b WHERE b.posted = true AND LOWER(b.title) LIKE LOWER(CONCAT('%', :title, '%'))")
     List<Blog> findByTitle(String title);
 
@@ -30,5 +33,5 @@ public interface BlogDAO extends JpaRepository<Blog, Long> {
     @Modifying
     @Transactional
     @Query("UPDATE Blog b SET b.posted = NOT b.posted WHERE b.id = :id")
-    void togglePostedStatus(Long id);
+    void togglePostedStatus(Long id); // Allow admin to toggle posted status of a blog
 }

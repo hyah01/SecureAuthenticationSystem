@@ -15,6 +15,7 @@ public class UserInfoDetails implements UserDetails {
     private String password;
     private List<GrantedAuthority> roles;
 
+    // Set up user details
     public UserInfoDetails(User user){
         this.username = user.getUsername();
         this.password = user.getPassword();

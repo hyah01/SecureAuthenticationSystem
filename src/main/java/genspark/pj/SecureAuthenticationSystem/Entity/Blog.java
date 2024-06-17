@@ -24,8 +24,14 @@ public class Blog {
     private Boolean posted = false;
     private String author;
 
+    public Blog(String title, String content, List<String> tags) {
+        this.title = title;
+        this.content = content;
+        this.tags = tags;
+    }
+
     @PrePersist
-    protected void onCreate(){
+    protected void onCreate(){ // on create, it sets timestamp to now and author to be current user
         this.timestamp = Instant.now();
         this. author = SecurityContextHolder.getContext().getAuthentication().getName();
         if (this.posted == null){

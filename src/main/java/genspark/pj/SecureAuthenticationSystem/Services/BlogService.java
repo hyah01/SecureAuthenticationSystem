@@ -8,6 +8,7 @@ public interface BlogService {
     List<Blog> getAllBlogs();
     List<Blog> getPostedBlogs();
     List<Blog> getUnPostedBlogs();
+    List<Blog> getMyUnPostedBlogs();
     Blog getById(long id);
     List<Blog> getByTitle(String title);
     List<Blog> getByAuthor(String author);
