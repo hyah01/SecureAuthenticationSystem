@@ -12,8 +12,6 @@ import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContext;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.ActiveProfiles;
 
 import static com.jayway.jsonpath.internal.path.PathCompiler.fail;
@@ -244,24 +242,16 @@ public class BlogServiceTest {
         ReflectionTestUtils.setField(blogService, "blogDAO", blogDAO);
         ReflectionTestUtils.setField(blogService, "userDAO", userDAO);
 
-        // Create a mock for Authentication and SecurityContext
         Authentication authentication = mock(Authentication.class);
         SecurityContext securityContext = mock(SecurityContext.class);
 
-        // Set the SecurityContext to return the mocked Authentication
         when(securityContext.getAuthentication()).thenReturn(authentication);
         SecurityContextHolder.setContext(securityContext);
 
-        // Stub the getName() method of the Authentication to return null
         when(authentication.getName()).thenReturn(null);
-
-        // Mock the blogDAO.getMyUnPostedBlogs to return an empty list when null is passed
         when(blogDAO.getMyUnPostedBlogs(null)).thenReturn(new ArrayList<>());
-
-        // Call the method under test
         List<Blog> actualBlogs = blogService.getMyUnPostedBlogs();
 
-        // Verify the result
         assertTrue(actualBlogs.isEmpty());
     }
 
