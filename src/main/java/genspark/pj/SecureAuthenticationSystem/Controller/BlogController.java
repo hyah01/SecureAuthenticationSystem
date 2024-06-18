@@ -33,31 +33,6 @@ public class BlogController {
         return "Please Login";
     }
 
-//    // Allow for user registration
-//    @PostMapping("/user/save")
-//    public ResponseEntity<Object> saveUser (@RequestBody User user){
-//        user.setPassword(passwordEncoder.encode(user.getPassword())); // encode password when storing into db
-//        User result = userDAO.save(user);
-//        if (result.getId() > 0){
-//            return ResponseEntity.ok("User Was Registered");
-//        }
-//        return ResponseEntity.status(404).body("Error: User Was Not Saved");
-//    }
-//
-//    // Only admin can see all users
-//    @GetMapping("/users/all")
-//    @PreAuthorize("hasAuthority('ADMIN')")
-//    public ResponseEntity<Object> getAllUsers(){
-//        return ResponseEntity.ok(userDAO.findAll());
-//    }
-//
-//    // All User/Admin can see their own account
-//    @GetMapping("/users/single")
-//    @PreAuthorize("hasAuthority('ADMIN') or hasAuthority('USER')")
-//    public ResponseEntity<Object> getMyDetails(){
-//        return ResponseEntity.ok(userDAO.findByUsername(getLoggedInUserDetails().getUsername()));
-//    }
-
     // Only admin can see all the blogs (posted, not posted)
     @GetMapping("/blogs/all")
     @PreAuthorize("hasAuthority('ADMIN')")
