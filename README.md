@@ -36,50 +36,50 @@ This project implements a secure authentication system for managing blogs and us
 - By default, the application runs on `http://localhost:8080`
 - Use tools like Postman to interact with the HTTP endpoints.
 
-## Usage
+# Usage
 
-### Blogs
+## Blogs
 
-- **Retrieve All Blogs**
+### Retrieve All Blogs
 - `GET /blogs/all` (Admin only)
 
-- **Retrieve Posted Blogs**
+### Retrieve Posted Blogs
 - `GET /blogs`
 
-- **Retrieve Unposted Blogs**
+### Retrieve Unposted Blogs
 - `GET /blogs/unposted` (Admin only)
 
-- **Retrieve Current User's Unposted Blogs**
+### Retrieve Current User's Unposted Blogs
 - `GET /blogs/myunpost`
 
-- **Retrieve Blog by ID**
+### Retrieve Blog by ID
 - `GET /blogs/{id}` (Admin only)
 
-- **Retrieve Blog by Title**
+### Retrieve Blog by Title
 - `GET /blogs/title?title={title}`
 
-- **Retrieve Blog by Author**
+### Retrieve Blog by Author
 - `GET /blogs/author?author={author}`
 
-- **Retrieve Blogs by Tag**
+### Retrieve Blogs by Tag
 - `GET /blogs/tag/{tag}`
 
-- **Retrieve Blogs Sorted by Title**
+### Retrieve Blogs Sorted by Title
 - `GET /blogs/sorted`
 
-### Users
+## Users
 
-- **Register User**
+### Register User
 - `POST /user/save`
 
-- **Register Admin User**
+### Register Admin User
 - `POST /user/save/admin` (Admin only)
 
-- **Delete User**
+### Delete User
 - `DELETE /users/{id}`
 
-- **Retrieve All Users**
+### Retrieve All Users
 - `GET /users/all` (Admin only)
 
-- **Retrieve Current User Details**
+### Retrieve Current User Details
 - `GET /user/single`
