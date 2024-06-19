@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
+@RequestMapping("/user")
 public class UserController {
     @Autowired
     UserServiceImpl usi;
@@ -23,7 +24,7 @@ public class UserController {
     private BlogDAO blogDAO;
 
 
-    @PostMapping("/user/save")
+    @PostMapping("/save")
     public ResponseEntity<Object> saveUser (@RequestBody User user){
         User result = usi.addUser(user);
         if (result.getId() > 0){
@@ -31,7 +32,7 @@ public class UserController {
         }
         return ResponseEntity.status(404).body("Error: User Was Not Saved");
     }
-    @PostMapping("/user/save/admin")
+    @PostMapping("/save/admin")
     @PreAuthorize("hasAuthority('ADMIN')")
     public ResponseEntity<Object> saveUserAdmin (@RequestBody User user){
         User result = usi.addAdmin(user);
@@ -41,20 +42,20 @@ public class UserController {
         return ResponseEntity.status(404).body("Error: User Was Not Saved");
     }
 
-    @DeleteMapping("/users/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<Object> deleteUser(@PathVariable Integer id){
         return ResponseEntity.ok(usi.deleteUserById(id));
     }
 
     // Only admin can see all users
-    @GetMapping("/users/all")
+    @GetMapping("/all")
     @PreAuthorize("hasAuthority('ADMIN')")
     public ResponseEntity<Object> getAllUsers(){
         return ResponseEntity.ok(usi.getAllUsers());
     }
 
     // All User/Admin can see their own account
-    @GetMapping("/user/single")
+    @GetMapping("/single")
     @PreAuthorize("hasAuthority('ADMIN') or hasAuthority('USER')")
     public ResponseEntity<Object> getMyDetails(){
         return ResponseEntity.ok(usi.getSingleUser());
