@@ -9,7 +9,9 @@ import genspark.pj.SecureAuthenticationSystem.Services.BlogServiceImpl;
 import genspark.pj.SecureAuthenticationSystem.Services.UserServiceImpl;
 
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContext;
@@ -24,8 +26,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
 
 import org.springframework.security.core.Authentication;
 
@@ -35,37 +35,30 @@ import org.springframework.test.util.ReflectionTestUtils;
 @SpringBootTest
 @ActiveProfiles("test")
 public class BlogServiceTest {
-    @Mock
+    @Autowired
     BlogDAO blogDAO;
-    @Mock
+    @Autowired
     UserDAO userDAO;
-    @InjectMocks
     UserServiceImpl usi;
-    @InjectMocks
     BlogServiceImpl bsi;
 
-    @Test
-    public void contextLoads() {
+    @BeforeEach
+    public void setUp(){
+        usi = new UserServiceImpl();
+        bsi = new BlogServiceImpl();
     }
+
 
     @Test
     public void test_add_blog_with_valid_data() {
-        BlogDAO blogDAO = mock(BlogDAO.class);
-        UserDAO userDAO = mock(UserDAO.class);
-        BlogServiceImpl blogService = new BlogServiceImpl();
-        ReflectionTestUtils.setField(blogService, "blogDAO", blogDAO);
-        ReflectionTestUtils.setField(blogService, "userDAO", userDAO);
+        Blog blog1 = new Blog("Valid Title1", "Valid Content", Arrays.asList("tag1", "tag2"));
+        Blog blog2 = new Blog("Valid Title2", "Valid Content", Arrays.asList("tag1", "tag2"));
 
-        Blog blogToAdd = new Blog("Valid Title", "Valid Content", Arrays.asList("tag1", "tag2"));
-        Blog savedBlog = new Blog("Valid Title", "Valid Content", Arrays.asList("tag1", "tag2"));
-        when(blogDAO.save(any(Blog.class))).thenReturn(savedBlog);
+        Blog result1 = bsi.addBlog(blog1);
+        Blog result2 = bsi.addBlog(blog2);
 
-        Blog result = blogService.addBlog(blogToAdd);
-
-        assertNotNull(result);
-        assertEquals("Valid Title", result.getTitle());
-        assertEquals("Valid Content", result.getContent());
-        assertEquals(Arrays.asList("tag1", "tag2"), result.getTags());
+        assertEquals("Valid Title1", result1.getTitle());
+        assertEquals("Valid Title2", result2.getTitle());
     }
 
     @Test

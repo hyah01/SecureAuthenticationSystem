@@ -54,7 +54,7 @@ public class BlogController {
     }
 
     // return current user's unposted blogs
-    @GetMapping("blogs/myunpost")
+    @GetMapping("/blogs/myunpost")
     public ResponseEntity<Object> getMyUnPostedBlogs(){
         return ResponseEntity.ok(bsl.getMyUnPostedBlogs());
     }
